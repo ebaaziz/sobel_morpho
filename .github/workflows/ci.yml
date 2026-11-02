@@ -16,6 +16,9 @@ jobs:
     
     - name: Create a Build folder 
       run: cmake -B Build/
+      
+    - name: Build the project
+     run: cmake --build
 
     - name: executer le code
       run: ./Build/sobel
