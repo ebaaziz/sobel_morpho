@@ -39,4 +39,4 @@ jobs:
       run: cmake --build Build/
 
     - name: executer le code
-      run: .\Build\sobel.exe
+      run: .\Build\Release\sobel.exe
