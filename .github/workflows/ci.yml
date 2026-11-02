@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Basculement sur l environnement de test github
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       
     - name: Installation des dependances
       run: sudo apt-get upgrade && sudo apt-get install -y libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev libsdl2-net-dev libsdl2-gfx-dev
