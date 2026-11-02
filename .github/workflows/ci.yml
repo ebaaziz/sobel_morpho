@@ -26,6 +26,12 @@ jobs:
   windows_build_and_execute:
     runs-on: windows-latest
     steps:
+    - name: Basculement sur l environnement de test github
+      uses: actions/checkout@v5
+      
+    - name: Installation des dependances
+      run: vcpkg install sdl2 sdl2-image sdl2-ttf sdl2-mixer sdl2-net sdl2-gfx --triplet x64-windows
+      
     - name: Create a Build folder 
       run: cmake -B Build/
       
